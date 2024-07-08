@@ -1,28 +1,19 @@
 .main-nav {
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 1560px;
 
     &__container {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
-        width: 299.45px;
-        margin-top: 14.55px;
-        
+        padding-top: 14.55px;
+    
         @media (min-width: 768px){
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin-top: 21px;
-            width: 726.67px;
+            padding-top: 21px;
         }
 
         @media (min-width: 1728px) {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin-top: 77px;
-            width: 1559.67px;
+            padding-top: 77px;
         }
     }
 
@@ -36,27 +27,23 @@
 
         @media (min-width: 768px){
             display: flex;
-            flex-wrap: wrap;
+            
         }
     }
 
     &__item {
-        @media (min-width: 768px) {
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24.64px;
-            text-align: left;
-            color: #000000;
-            padding-right: 25px;
-        }
-
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24.64px;
+        color: #000000;
+        padding-right: 25px;
+        
         @media (min-width: 1728px) {
             font-family: Poppins;
             font-size: 24px;
             font-weight: 400;
             line-height: 36.96px;
-            text-align: left;
             color: #000000;
             padding-right: 36px;
         }
@@ -66,13 +53,12 @@
         padding: 0;
     }
 
-    &__logo {
+    &__logo {  
         margin-right: 119.34px;
         img {
             width: 73.61px;
             height: 24.66px;
         }
-
         @media (min-width: 768px) { 
             margin-right: 140.43px;
             img {
@@ -93,9 +79,8 @@
     &__icons {
         margin-left: auto;
         display: flex;
-        width: 71px;
         justify-content: space-between;
-        margin-right: 19px;
+        gap: 20px;
 
         @media (min-width: 768px) {
             width: 115px;
@@ -142,12 +127,14 @@
     }
 
     &__close {
-        @include clear-button;
+        @include clear-button; 
+        margin-left: auto;
         display: none;
 
         &--showed {
             display: block;
         }
+
         img {
             width: 12px;
             height: 12px;
