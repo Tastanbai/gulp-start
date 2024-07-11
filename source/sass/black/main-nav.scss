@@ -48,6 +48,7 @@
             width: 60%;
             height: 100%;
             background-color: #EBEBEB;
+            z-index: 1000;
         }
 
         @media (min-width: 768px) {
@@ -141,6 +142,7 @@
 
     &__search {
         position: relative;
+        z-index: 1001;
         img {
             width: 17px;
             height: 16px;
@@ -154,6 +156,7 @@
 
     &__shop {
         position: relative;
+        z-index: 1002;
         img {
             width: 19px;
             height: 16px;
