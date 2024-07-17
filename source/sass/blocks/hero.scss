@@ -1,0 +1,231 @@
+.main {
+   
+    .hero {
+      
+        &__container {   
+            @media (min-width: 1728px) {
+                display: flex;
+                justify-content: space-between;
+                
+            }
+        }
+
+        &__title-button {
+            position: relative;
+        }
+
+        &__title-list {
+            margin-top: 40px;
+            font-weight: 700;           
+            color: #000000;
+            margin-bottom: 4px;
+           
+            @media (min-width: 768px) {
+                margin-top: 59px;
+            }
+
+            &-item-1 {
+                display: block;
+                font-size: 24px;
+                line-height: 26.88px;
+                
+                @media (min-width: 768px) {
+                    font-size: 48px;
+                    line-height: 53.76px;
+                }
+
+                @media (min-width:1728px) {
+                    font-size: 75px;
+                    line-height: 84px;
+                    color: #000000;   
+                }
+            }
+        
+            &-item-2 {
+                display: block;
+                font-size: 36px;
+                line-height: 40.32px;
+                
+                @media (min-width: 768px) {
+                    font-size: 96px;
+                    line-height: 107.52px;    
+                }
+            }   
+        }
+
+        &__subtitle{
+            font-weight: 700;           
+            color: #000000;
+            margin-bottom: 22px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 72px;
+            }
+
+            &-item-3 {
+                font-size: 62px;
+                line-height: 69.44px;
+                
+                @media (min-width: 768px) {
+                    font-size: 62px;
+                    line-height: 69.44px;
+                    margin-bottom: 70px;
+                }
+
+                @media (min-width: 1728px) {
+                    font-size: 75px;
+                    font-weight: 700;
+                    line-height: 84px;
+                }
+            }
+        
+            &-description {
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 23.1px;
+                text-align: left;
+                color: #000000BF;
+    
+                @media (min-width: 768px) {
+                    font-size: 20px;
+                    line-height: 30.8px;
+                    position: absolute;
+                    left: 341px;
+                    top: 155px;
+                }
+    
+                @media (min-width:1728px) {
+                    display: block;
+                    font-size: 28px;
+                    font-weight: 400;
+                    line-height: 43.12px;
+                    color: #000000BF;
+                    text-transform: capitalize;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin: 78px 0;
+                }
+            }
+
+        }
+
+        &__button {
+            display: block;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30.8px;
+            padding: 12px 79px;
+            color: #FFFFFF;
+            text-align: center;
+            background-color: #000000;
+            text-transform: capitalize;
+            margin-bottom: 50px;
+            box-shadow: 0px 2.32px 1.97px 0px #00000006;
+            box-shadow: 0px 5.39px 4.58px 0px #00000009;
+            box-shadow: 0px 9.68px 8.22px 0px #0000000B;
+            box-shadow: 0px 16.06px 13.65px 0px #0000000C;
+            box-shadow: 0px 26.45px 22.49px 0px #0000000E;
+            box-shadow: 0px 46.23px 39.3px 0px #00000011;
+            box-shadow: 0px 100px 85px 0px #00000017;
+
+            @media (min-width: 768px) {
+                line-height: 43.12px;
+                padding: 22px 124px;
+                width: 458px;
+                height: 87px;
+                margin: 0 auto;
+                margin-bottom: 70px;
+            }
+
+            @media (min-width:1728px) {
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 43.12px;
+                padding: 22px 56px;
+                margin-left: 0;
+            }
+        }
+
+        &__product {
+            padding-top: 29px;
+            background: linear-gradient(180deg, #E4E4E4 0%, #FAFAFA 100%);
+            text-align: center;
+            padding-bottom: 35px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            @media (min-width: 768px) {
+                padding-top: 56px;
+                margin-left: -20px;
+                margin-right: -20px;
+            }
+        
+            @media (min-width:1728px) {
+                padding-top: 316px;
+                background: linear-gradient(90deg, #E4E4E4 0%, #FAFAFA 100%);
+                height: 100%;\\\\\\\\
+            }
+            
+            &-image {
+                padding-top: 28px;
+                width: 296px;
+                height: 179px;
+                box-shadow: 0px 0px 45.8px 0px #0000000D;
+                margin-bottom: 55px;
+                
+                @media (min-width: 768px) {
+                    margin: 56px auto;
+                    width: 504px;
+                    height: 305px;
+                }
+
+                @media (min-width:1728px) { 
+                    width: 783px;
+                    height: 474px;
+                }
+            }
+            
+            &-name {
+                display: block;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 21.82px;
+                text-align: center;
+                color: #000000;
+                margin-bottom: 12px;
+               
+                @media (min-width: 768px) {
+                    font-size: 38px;
+                    line-height: 34.55px;
+                    margin-bottom: 22px;
+                }
+                @media (min-width:1728px) {
+                    margin-top: 117px;
+                    margin-bottom: 0;
+                }
+
+            }
+
+            &-price {
+                display: block;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 18.19px;
+                text-align: center;
+                color: #00000080;
+               
+                @media (min-width: 768px) {
+                    font-size: 32px;
+                    line-height: 29.1px;
+                }
+                
+                @media (min-width:1728px) {
+                    font-size: 32px;
+                    line-height: 29.1px;
+                    margin-top: 15px;
+                }
+            }  
+        }
+    }
+}
