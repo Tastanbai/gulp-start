@@ -1,0 +1,44 @@
+.marketplace {
+    &__container {
+        background-color: #000000;
+        overflow: hidden;
+    }
+
+    &__list {
+        display: flex;
+        gap: 200px;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        justify-content: center;
+        animation-duration: 22s;
+        animation: slide-animation 22s linear infinite;
+        
+        @media (min-width: 768px) {
+            padding-top: 45px;
+            padding-bottom: 45px;
+        }
+
+        @media (min-width: 1728px) {
+            padding-top: 56px;
+            padding-bottom: 56px;
+        }
+
+        img {
+            height: 16px;
+           
+            @media (min-width: 768px) {
+                height: 40px;
+            }
+        }
+    }
+    
+    @keyframes slide-animation {
+        from {
+            transform: translateX(0%);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+}
