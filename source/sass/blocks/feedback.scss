@@ -1,0 +1,110 @@
+.feedback {
+    &__title {
+        font-size: 45px;
+        font-weight: 500;
+        line-height: 62.15px;
+        text-align: center;
+        color: #000000;
+
+        &::before,
+        &::after {
+        content: "";
+        display: inline-block;
+        width: 41px;
+        height: 3px;
+        background-color: #000;
+        vertical-align: middle;
+        transform: translateY(-2px);
+        }
+
+        &::before {
+        margin-right: 18px;
+        }
+
+        &::after {
+        margin-left: 18px;
+        } 
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+        @media (min-width: 1728px) {
+            display: flex;
+            gap: 68px;
+            
+        }
+        
+    }
+
+    &__item {  
+        margin: auto;
+        border: 2px solid #DEDEDE;
+        border-radius: 25px;
+        background-color: #F3F3F3;
+        padding-left: 25px;
+        position: relative;
+        width: 100%;
+
+        @media (min-width: 768px) {
+            display: flex;
+            width: 728px;
+            padding-left: 69px;
+        }   
+    }
+    
+    &__image {
+        width: 54px;
+        height: 75px;
+        margin-left: auto;
+        margin-top: 25px;
+
+        @media (min-width: 768px) { 
+            width: 132px;
+            height: 180px;
+            margin-right: 58px;
+            margin-top: 78px;
+            margin-bottom: 78px;
+            margin-left: 0;
+        }
+    }
+
+    &__name {
+        display: block;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 38px;
+        color: #000000;
+        position: absolute;
+        top: 20px;
+        left: 35%;
+        
+        @media (min-width: 768px) {   
+            left: 271px;
+            margin-top: 100px;
+            margin-bottom: 23px;
+        }
+    }
+    
+
+    &__description {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #000000BF;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        width: 100%;
+     
+        @media (min-width: 768px) {   
+            position: absolute;
+            top: 45%;
+            left: 38%;
+            width: 411px;
+        }
+    }
+}
