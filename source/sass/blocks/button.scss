@@ -3,12 +3,12 @@
 
     font-size: 20px;
     font-weight: 600;
-    line-height: 30.8px;
+    line-height: 30px;
     color: #FFFFFF;
     text-align: center;
     background-color: #000000;
     text-transform: capitalize;
-    padding: 12px 79px;
+    padding: 12px;
 
     box-shadow: 
             0px 2.32px 1.97px 0px #00000006,
@@ -20,13 +20,12 @@
             0px 100px 85px 0px #00000017;
 
     @media (min-width: 768px) {
-        line-height: 43.12px;
-        padding: 22px 124px;
+        line-height: 43px;
+        padding: 22px;
     }
 
     @media (min-width:1728px) {
         font-size: 28px;
-        line-height: 43.12px;
-        padding: 22px 56px;
+        padding: 22px;
     }
 }
