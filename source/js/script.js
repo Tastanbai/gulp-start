@@ -12,9 +12,9 @@ buttonOpened.addEventListener('click', function() {
     buttonClosed.addEventListener('click', closeMenu);
 });
 
-const buttonClick = document.querySelectorAll('.product__click');
+const productButtons = document.querySelectorAll('.product__click');
 
-buttonClick.forEach(function(button) { 
+productButtons.forEach(function(button) { 
     button.addEventListener('click', function() { 
         document.querySelector('.cart').classList.remove('cart__hidden'); 
     });
