@@ -12,16 +12,14 @@ buttonOpened.addEventListener('click', function() {
     buttonClosed.addEventListener('click', closeMenu);
 });
 
-
 const buttonClick = document.querySelectorAll('.product__click');
-
 
 buttonClick.forEach(function(button) { 
     button.addEventListener('click', function() { 
-        document.querySelector('.cart').style.display = 'block'; 
+        document.querySelector('.cart').classList.remove('cart__hidden'); 
     });
 });
 
 document.querySelector('.cart__close').addEventListener('click', function() {
-    document.querySelector('.cart').style.display = 'none';
+    document.querySelector('.cart').classList.add('cart__hidden');
 });

@@ -1,6 +1,7 @@
 .cart {
-    display: none;
-    
+    &__hidden {
+        display: none;
+    }
     &__wrapper {
         position: fixed;
         top: 50%;
