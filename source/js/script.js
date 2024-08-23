@@ -1,3 +1,11 @@
+import products from "./products.js";
+import renderProducts from "./renderProducts.js";
+
+const bestsellingList=document.querySelector('.best-selling__list');
+const bestsellingItemTemplate=document.querySelector('#product').content;
+
+renderProducts(products,bestsellingItemTemplate, bestsellingList, true);
+
 const buttonOpened = document.querySelector('.main-nav__burger');
 const menu = document.querySelector('.main-nav__menu');
 const buttonClosed = document.querySelector('.main-nav__close');
