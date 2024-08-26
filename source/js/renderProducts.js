@@ -18,20 +18,19 @@ export default (products, template, target, isTargetList = false,) => {
         const itemEl = productEl.cloneNode(true);
         const imageEl = itemEl.querySelector('.product__image');
         const descriptionEl = itemEl.querySelector('.product__description');
-        const priceEl = itemEl.querySelector('.product__price');
-        const newPriceEl = priceEl.querySelector('.product__new-price');
-        const oldPriceEl = priceEl.querySelector('.product__old-price');
+        const newPriceEl = itemEl.querySelector('.product__new-price');
+        const oldPriceEl = itemEl.querySelector('.product__old-price');
         const clickEl = itemEl.querySelector('.product__click');
-        const { id, status, image, description, price, isBig} = product;
+        const { id, status, image, description, price_new, price_old, isBig} = product;
     
         itemEl.dataset.productEl = id;
         imageEl.src = image;
         descriptionEl.textContent = description;
+        newPriceEl.textContent = `${price_new} ₽`;
+        oldPriceEl.textContent = `${price_old} ₽`;
 
-        newPriceEl.textContent = `${price[0]} ₽`;
-        oldPriceEl.textContent = `${price[1]} ₽`;
-
-        if (status.length) {
+        
+        if (status) {
             itemEl.classList.add(`product--${status}`);
         }
 

@@ -3,11 +3,9 @@ export default [
         id: 1,
         status: "hot",
         image: "img/product-image1.png",
-        description: "Slick formal sneaker\nshoe",
-        price: [
-            2999,
-            4999,
-        ],
+        description: "Slick formal sneaker shoe",
+        price_new: 2999,
+        price_old: 4999,
         isBig: true,
     },
     
@@ -16,10 +14,8 @@ export default [
         status: "new",
         image: "img/product-image2.png",
         description: "Slick sneaker shoe",
-        price: [
-            2999,
-            3999,
-        ],
+        price_new: 2999,
+        price_old: 3999,
         isBig: false,
     },
 
@@ -28,10 +24,8 @@ export default [
         status: "",
         image: "img/product-image3.png",
         description: "Slick canvas shoe",
-        price: [
-            2999,
-            3999,
-        ],
+        price_new: 2999,
+        price_old: 3999,
         isBig: false,
     }
 ];
