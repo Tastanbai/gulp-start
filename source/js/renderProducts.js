@@ -30,7 +30,7 @@ export default (products, template, target, isTargetList = false,) => {
         oldPriceEl.textContent = `${price_old} ₽`;
 
         
-        if (status) {
+        if (status?.length) {
             itemEl.classList.add(`product--${status}`);
         }
 
