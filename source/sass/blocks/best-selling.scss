@@ -87,13 +87,39 @@
         }
     }
 
-    &__wrapper {
+    // &__wrapper {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 25px;
+    //     margin-bottom: 25px;
+    //     position: relative;
+        
+    //     @media (min-width: 768px) and (max-width: 1728px) {
+    //         display: grid;
+    //         grid-template-columns: repeat(2, minmax(212px, 344px));
+    //         grid-template-rows: 846px 364px;
+    //         gap: 40px;
+    //         justify-content: center;
+    //         margin-bottom: 40px;
+    //       }
+  
+    //     @media (min-width: 1728px) {
+    //        display: grid;
+    //        grid-template-columns: repeat(3, minmax(373px, 510px));
+    //        grid-template-rows: repeat(2, 524px);
+    //        gap: 69px 29px;
+    //        margin-bottom: 85px;
+    //     }
+    // }
+
+   &__list {
+        @include clear-list;
         display: flex;
         flex-direction: column;
         gap: 25px;
         margin-bottom: 25px;
         position: relative;
-        
+    
         @media (min-width: 768px) and (max-width: 1728px) {
             display: grid;
             grid-template-columns: repeat(2, minmax(212px, 344px));
@@ -101,33 +127,17 @@
             gap: 40px;
             justify-content: center;
             margin-bottom: 40px;
-          }
-  
+        }
+
         @media (min-width: 1728px) {
-           display: grid;
-           grid-template-columns: repeat(3, minmax(373px, 510px));
-           grid-template-rows: repeat(2, 524px);
-           gap: 69px 29px;
-           margin-bottom: 85px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(373px, 510px));
+            grid-template-rows: repeat(2, 524px);
+            gap: 69px 29px;
+            margin-bottom: 85px;
         }
     }
-
-    &__product {
-        width: 100%;
-        position: relative;
     
-        &--big {
-            @media (min-width: 768px) {
-                grid-column: span 2;
-            }
-    
-            @media (min-width: 1728px) {
-                grid-column: span 2;
-                grid-row: span 2;
-            }
-        }
-    }
-
     &__btn {
         margin: auto;
         width: 290px;

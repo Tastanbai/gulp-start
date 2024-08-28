@@ -127,47 +127,46 @@
                 </div>
 
                 <div class="best-selling__wrapper">
-                    <div class="best-selling__product best-selling__product--big">
-                        <div class="product product--big product--hot">
+                
+                    <template id="product">
+                        <div class="product">
                             <img  class="product__image" src="img/product-image1.png" alt="">
-                            <p class="product__description">Slick formal sneaker <br>shoe</p>
+                            <p class="product__description"></p>
                             <div class="product__price">
-                                <span class="product__new-price">2 999 ₽</span>
-                                <span class="product__old-price">4999 ₽</span>
+                                <span class="product__new-price"></span>
+                                <span class="product__old-price"></span>
                             </div>
                             <button class="product__click">
                                 <img  src="img/arrow-btn.svg" alt="">
                             </button>
                         </div>
+                    </template>
+                    
+                    <ul class="best-selling__list"></ul>
+        
+                    <!-- <div class="product product--new">
+                        <img  class="product__image" src="img/product-image2.png" alt="">
+                        <p class="product__description">Slick sneaker shoe</p>
+                        <div class="product__price">
+                            <span class="product__new-price">2999 ₽</span>
+                            <span class="product__old-price">3999 ₽</span>
+                        </div>
+                        <button class="product__click">
+                            <img  src="img/arrow-btn.svg" alt="">
+                        </button>
                     </div>
         
-                    <div class="best-selling__product best-selling__product--medium">
-                        <div class="product product--new">
-                            <img  class="product__image" src="img/product-image2.png" alt="">
-                            <p class="product__description">Slick sneaker shoe</p>
-                            <div class="product__price">
-                                <span class="product__new-price">2999 ₽</span>
-                                <span class="product__old-price">3999 ₽</span>
-                            </div>
-                            <button class="product__click">
-                                <img  src="img/arrow-btn.svg" alt="">
-                            </button>
+                    <div class="product">
+                        <img  class="product__image" src="img/product-image3.png" alt="">
+                        <p class="product__description">Slick canvas shoe</p>
+                        <div class="product__price">
+                            <span class="product__new-price">2999 ₽</span>
+                            <span class="product__old-price">3999 ₽</span>
                         </div>
-                    </div>
-
-                    <div class="best-selling__product best-selling__product--medium">
-                        <div class="product">
-                            <img  class="product__image" src="img/product-image3.png" alt="">
-                            <p class="product__description">Slick canvas shoe</p>
-                            <div class="product__price">
-                                <span class="product__new-price">2999 ₽</span>
-                                <span class="product__old-price">3999 ₽</span>
-                            </div>
-                            <button class="product__click">
-                                <img  src="img/arrow-btn.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
+                        <button class="product__click">
+                            <img  src="img/arrow-btn.svg" alt="">
+                        </button>
+                    </div> -->
                 </div>
             <button class="best-selling__btn button">Показать Все</button>
         </section>
@@ -178,13 +177,15 @@
                 <div class="feedback__wrapper">
                     <div class="feedback__item">
                         <img class="feedback__image" src="img/ava-joshi.png" alt="">
-                        <span class="feedback__name">Ava Joshi</span>
-                        <span class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                        <div class="feedback__name">Ava Joshi</div>
+                        <div class="feedback__stars"></div>
+                        <div class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     </div>
                     <div class="feedback__item">
                         <img class="feedback__image" src="img/otis-bisnoy.png" alt="">
-                        <span class="feedback__name">Otis bisnoy</span>
-                        <span class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                        <div class="feedback__name">Otis bisnoy</div>
+                        <div class="feedback__stars feedback__stars--cut"></div>
+                        <div class="feedback__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                     </div>
                 </div>
             </div>
@@ -203,6 +204,6 @@
         </div>
 
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer type="module"></script>
 </body>
 </html>
