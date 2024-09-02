@@ -21,13 +21,13 @@ export default (products, template, target, isTargetList = false,) => {
         const newPriceEl = itemEl.querySelector('.product__new-price');
         const oldPriceEl = itemEl.querySelector('.product__old-price');
         const clickEl = itemEl.querySelector('.product__click');
-        const { id, status, image, description, price_new, price_old, isBig} = product;
+        const { id, status, image, name, price, oldPrice, isBig} = product;
     
         itemEl.dataset.productEl = id;
         imageEl.src = image;
-        descriptionEl.textContent = description;
-        newPriceEl.textContent = `${price_new} ₽`;
-        oldPriceEl.textContent = `${price_old} ₽`;
+        descriptionEl.textContent = name;
+        newPriceEl.textContent = `${price} ₽`;
+        oldPriceEl.textContent = `${oldPrice} ₽`;
 
         
         if (status?.length) {
@@ -36,6 +36,10 @@ export default (products, template, target, isTargetList = false,) => {
 
         if (isBig) {
             itemEl.classList.add('product--big');
+        }
+
+        if (clickEl) {  
+            clickEl.classList.add('product__click');
         }
 
         fragment.appendChild(itemEl);
