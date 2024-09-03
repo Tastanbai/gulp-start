@@ -1,7 +1,7 @@
 import { OpenMenu } from "./menu.js";
 import products from "./products.js";
 import renderProducts from "./renderProducts.js";
-import { fetchData } from "./fetchProducts.js";
+import { fetchData } from "./api.js";
 import { AllButtons } from "./clickButtons.js";
 
 OpenMenu();
