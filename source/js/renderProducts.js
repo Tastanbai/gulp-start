@@ -1,3 +1,8 @@
+import formatPrice from "./formatPrice.js";
+import {addToStorage} from "./localstorage.js";
+import { addToCard } from "./cart.js";
+import { CartAddButtons, CartCloseButtons } from "./clickButtons.js";
+
 export default (products, template, target, isTargetList = false,) => {
     const fragment =document.createDocumentFragment();
 
@@ -21,14 +26,20 @@ export default (products, template, target, isTargetList = false,) => {
         const newPriceEl = itemEl.querySelector('.product__new-price');
         const oldPriceEl = itemEl.querySelector('.product__old-price');
         const clickEl = itemEl.querySelector('.product__click');
-        const { id, status, image, name, price, oldPrice, isBig} = product;
+        const { id, status, image, name, price, oldPrice, isBig } = product;
     
         itemEl.dataset.productEl = id;
         imageEl.src = image;
         descriptionEl.textContent = name;
-        newPriceEl.textContent = `${price} ₽`;
-        oldPriceEl.textContent = `${oldPrice} ₽`;
+        newPriceEl.textContent = formatPrice(price);
+        oldPriceEl.textContent = formatPrice(price);
+        
 
+        clickEl.addEventListener('click',  () => {
+            addToStorage('cart', product);
+            addToCard(product);
+        });
+        
         
         if (status?.length) {
             itemEl.classList.add(`product--${status}`);

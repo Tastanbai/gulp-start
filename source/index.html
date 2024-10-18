@@ -203,6 +203,38 @@
             </div>
         </div>
 
+
+        <div class="basket hidden">
+            <div class="basket__wrapper">
+                <div class="basket__name">Корзина товаров</div>
+                <button class="basket__close">
+                    <img src="img/close.svg" alt="">
+                </button>
+        
+                <div class="basket__list">
+                    <template id="basket-list__template">
+                        <div class="basket__item">
+                            <img class="basket__image" src="" alt="">
+                            <p class="basket__tag"></p>
+                            <div class="basket__quantity">
+                                <button class="basket__quantity-btn">-</button>
+                                <span class="basket__quantity-value">0</span>
+                                <button class="basket__quantity-btn">+</button>
+                            </div>
+                            <p class="basket__price"></p>
+                        </div>
+                    </template>
+                    <ul class="basket-cart__list"></ul>
+                </div>
+                <div class="basket__summary">
+                    <div class="basket__result">Итого:</div>
+                    <div class="basket__count">0шт.</div>
+                    <div class="basket__total">0 ₽</div>
+                </div>
+                <button class="basket__button button">Оформить заказ</button>
+            </div>
+        </div>
+    
     </main>
     <script src="js/script.js" defer type="module"></script>
 </body>
