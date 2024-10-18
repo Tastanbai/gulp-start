@@ -1,0 +1,184 @@
+.basket {
+    &__wrapper {
+        width: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        border-radius: 15px;
+        background-color: #FBFBFB;
+        box-shadow: 0px 2.77px 2.21px 0px #00000005,
+        0px 6.65px 5.32px 0px #00000007,
+        0px 12.52px 10.02px 0px #00000009,
+        0px 22.34px 17.87px 0px #0000000B,
+        0px 41.78px 33.42px 0px #0000000D,
+        0px 100px 80px 0px #00000012;
+        color: #000000;
+        padding: 20px;
+
+        @media (min-width: 768px) {
+            width: 614px;
+            padding: 30px;
+        }
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+        margin-bottom: 15px;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+            line-height: 39px;
+        }
+    }
+
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__result {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-right: 236px;
+        }
+    }
+
+    &__count {
+        font-size: 16px;
+        line-height: 19px;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            margin-right: 70px;
+        }
+    }
+
+    &__total {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+
+        @media (min-width: 768px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    &__button {
+        width: 260px;
+        padding: 16px 14px;
+        box-shadow: 
+            0px 2.32px 1.97px 0px #00000006,
+            0px 5.39px 4.58px 0px #00000009,
+            0px 9.68px 8.22px 0px #0000000B,
+            0px 16.06px 13.65px 0px #0000000C,
+            0px 26.45px 22.49px 0px #0000000E,
+            0px 46.23px 39.3px 0px #00000011,
+            0px 100px 85px 0px #00000017;
+        background-color: #DC4B54;
+
+        @media (min-width: 768px) {
+            padding: 13px 55px;
+            width: 312px;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 37px;
+            margin-left: auto;        
+        }
+    }
+ 
+    &__item {
+        display: flex;
+        flex-wrap: wrap; 
+        align-items: center;
+        border-top: 2px solid #D9D9D9;
+        margin-bottom: 10px;
+        &:last-child {
+            border-bottom: 2px solid #D9D9D9;
+        }
+    }
+
+    &__image {
+        width: 47px;
+        height: 49px;
+    }
+
+    &__tag {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        color: #000000; 
+        margin: 0 auto;
+        margin-left: 15px;
+       
+        
+        @media (min-width: 768px) {
+            font-size: 21px;
+            line-height: 25.41px;
+        }
+    }
+
+    &__quantity {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 25px;
+
+        
+        @media (min-width: 768px) {
+            margin-left: 33px;
+        }
+        
+        &-btn {
+            @include clear-button;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    &__price {
+        margin: 0 auto;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        margin-left: auto;
+    }
+
+    &__close {
+        @include clear-button;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        @media (min-width: 768px) {
+            display: block;
+            top: 20px;
+            right: 20px;
+            
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
